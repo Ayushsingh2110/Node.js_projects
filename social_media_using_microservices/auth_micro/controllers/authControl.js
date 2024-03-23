@@ -59,6 +59,10 @@ class AuthController {
         }
 
     }
+
+    static async getUser(req, res){
+        res.status(200).json({ user: req.user})
+    }
 }
 
 export default AuthController;
